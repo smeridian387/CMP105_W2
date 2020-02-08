@@ -1,4 +1,5 @@
 #include "Level.h"
+using namespace std;
 
 Level::Level(sf::RenderWindow* hwnd, Input* in)
 {
@@ -17,7 +18,10 @@ Level::~Level()
 // handle user input
 void Level::handleInput()
 {
-
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+	{
+		cout << "The W key is being pressed" << endl;
+	}
 
 }
 
