@@ -22,6 +22,12 @@ void Level::handleInput()
 	{
 		cout << "The W key is being pressed" << endl;
 	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::J) &&
+		sf::Keyboard::isKeyPressed(sf::Keyboard::K) &&
+		sf::Keyboard::isKeyPressed(sf::Keyboard::L))
+	{
+		cout << "J, K and L are being pressed" << endl;
+	}
 
 }
 
